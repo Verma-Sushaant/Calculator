@@ -5,15 +5,180 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="15dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.45">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/CalculatorButton"
+            android:layout_weight="0.9"
+            android:id="@+id/pie"
+            android:text="3.14"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/CalculatorButton"
+            android:layout_weight="0.9"
+            android:id="@+id/e"
+            android:text="2.71"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:background=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHorizontal_bias="1">
 
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/sine"
+            android:text="@string/sine" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/cosine"
+            android:text="@string/cosine" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/tangent"
+            android:text="@string/tangent" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/logarithm"
+            android:text="@string/logarithm" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/clear"
+            android:text="@string/clear"
+            android:textSize="20sp"
+            android:textColor="@color/medium_spring_green"/>
+
+        <ImageButton
+            style="@style/CalculatorButton"
+            android:id="@+id/delete"
+            android:contentDescription="Delete"
+            android:src="@drawable/backspace"
+            android:tint="@color/medium_spring_green"
+            tools:ignore="HardcodedText,UseAppTint" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/percent"
+            android:text="@string/percent"
+            android:textSize="20sp"
+            android:textColor="@color/medium_spring_green"/>
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/multiply"
+            android:text="@string/multiply"
+            android:textSize="20sp"
+            android:textColor="@color/medium_spring_green"/>
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/one"
+            android:text="@string/one" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/two"
+            android:text="@string/two" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/three"
+            android:text="@string/three" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/divide"
+            android:text="@string/divide"
+            android:textSize="20sp"
+            android:textColor="@color/medium_spring_green"/>
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/four"
+            android:text="@string/four" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/five"
+            android:text="@string/five" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/six" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/add"
+            android:textSize="20sp"
+            android:textColor="@color/medium_spring_green"/>
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/seven" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/eight" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/nine" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/subtract"
+            android:textSize="20sp"
+            android:textColor="@color/medium_spring_green"/>
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/more"
+            android:textColor="@color/grey"/>
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/zero" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/point" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="@string/result"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/medium_spring_green"/>
+    </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
