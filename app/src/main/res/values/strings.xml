@@ -24,4 +24,10 @@
     <string name="tangent">tan</string>
     <string name="logarithm">log</string>
     <string name="factorial">!</string>
+    <string name="power"><expression>a&#x1D47;</expression></string>
+    <string name="square_root">√a</string>
+    <string name="reciprocal">1/a</string>
+    <string name="pi">π</string>
+    <string name="euler">e</string>
+
 </resources>

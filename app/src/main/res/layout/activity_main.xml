@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/constant"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,8 +27,9 @@
             android:layout_height="wrap_content"
             style="@style/CalculatorButton"
             android:layout_weight="0.9"
-            android:id="@+id/pie"
-            android:text="3.14"
+            android:id="@+id/pi"
+            android:text="@string/pi"
+            android:textStyle="italic"
             tools:ignore="ButtonStyle,HardcodedText" />
 
         <Button
@@ -35,8 +37,9 @@
             android:layout_height="wrap_content"
             style="@style/CalculatorButton"
             android:layout_weight="0.9"
-            android:id="@+id/e"
-            android:text="2.71"
+            android:id="@+id/euler"
+            android:text="@string/euler"
+            android:textStyle="italic"
             tools:ignore="ButtonStyle,HardcodedText" />
     </LinearLayout>
     <GridLayout
